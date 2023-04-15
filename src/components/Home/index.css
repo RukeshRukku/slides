@@ -1,0 +1,98 @@
+.total {
+  height: 100vh;
+}
+.bottom {
+  height: 90vh;
+  background-color: #ffffff;
+}
+.plus-con {
+  width: 100px;
+  padding: 10px;
+  background-color: #dbeafe;
+  height: 40px;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bree Serif';
+  font-size: 23px;
+  outline: none;
+  border-width: 0;
+  cursor: pointer;
+}
+.plus {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 10px;
+  padding-left: 0;
+}
+.bottom-bot {
+  display: flex;
+}
+.right {
+  height: 80vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/nxt-slides-bg.png ');
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 4px 4px 16px 0px #475569;
+}
+.slideHead {
+  font-family: 'Bree Serif';
+  font-size: 50px;
+  color: #0967d2;
+  margin-bottom: 0;
+}
+.slidePara {
+  font-family: 'Bree Serif';
+  font-size: 28px;
+  font-weight: 600;
+}
+.flex {
+  display: none;
+}
+.input1 {
+  width: 50%;
+  outline: none;
+  height: 60px;
+  background-color: #dbeafe;
+  border-width: 0;
+  font-size: 50px;
+  color: #0967d2;
+  font-family: 'Bree Serif';
+  text-align: center;
+}
+.input2 {
+  width: 30%;
+  outline: none;
+  height: 30px;
+  background-color: #dbeafe;
+  border-width: 0;
+  font-size: 28px;
+  font-family: 'Bree Serif';
+  margin-top: 30px;
+  text-align: center;
+}
