@@ -10,6 +10,7 @@
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/nxt-slides-bg.png');
   border-radius: 15px;
   background-size: cover;
+  background-color: #ffffff;
 }
 li {
   margin-top: 20px;
@@ -18,6 +19,7 @@ li {
   padding-left: 20px;
   cursor: pointer;
   padding: 20px;
+  justify-content: flex-end;
 }
 .he {
   font-family: 'Bree Serif';

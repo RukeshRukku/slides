@@ -3,7 +3,8 @@
 }
 .bottom {
   height: 90vh;
-  background-color: #ffffff;
+  background-color: #f8fafc;
+  padding-top: 30px;
 }
 .plus-con {
   width: 100px;
@@ -11,7 +12,6 @@
   background-color: #dbeafe;
   height: 40px;
   border-radius: 6px;
-  margin-top: 30px;
   margin-left: 30px;
   display: flex;
   justify-content: center;
@@ -56,6 +56,7 @@ ol {
   justify-content: center;
   align-items: center;
   background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/nxt-slides-bg.png ');
+  background-size: cover;
   width: 100%;
   border-radius: 15px;
   box-shadow: 4px 4px 16px 0px #475569;

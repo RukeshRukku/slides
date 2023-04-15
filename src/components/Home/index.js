@@ -87,7 +87,17 @@ class Home extends Component {
   }
 
   changeEdit1Bool = () => {
-    this.setState({edit1: false})
+    const {list} = this.state
+    const filtered = list.map(each => {
+      if (each.heading === '' || each.description === '') {
+        if (each.heading === '') {
+          return {...each, heading: 'Heading'}
+        }
+        return {...each, description: 'Description'}
+      }
+      return each
+    })
+    this.setState({edit1: false, list: filtered})
   }
 
   changeEdit2 = event => {
@@ -106,7 +116,17 @@ class Home extends Component {
   }
 
   changeEdit2Bool = () => {
-    this.setState({edit2: false})
+    const {list} = this.state
+    const filtered = list.map(each => {
+      if (each.heading === '' || each.description === '') {
+        if (each.heading === '') {
+          return {...each, heading: 'Heading'}
+        }
+        return {...each, description: 'Description'}
+      }
+      return each
+    })
+    this.setState({edit2: false, list: filtered})
   }
 
   clickHead = () => {
@@ -124,6 +144,7 @@ class Home extends Component {
     const input2Flex = edit2 ? '' : 'flex'
     const contentHeadFlex = edit1 ? 'flex' : ''
     const contentParaFlex = edit2 ? 'flex' : ''
+
     return (
       <div className="total">
         <Header />
@@ -150,13 +171,6 @@ class Home extends Component {
             </ol>
             <div className="right">
               <div className="card">
-                <input
-                  type="text"
-                  className={`input1 ${input1Flex}`}
-                  value={heading}
-                  onBlur={this.changeEdit1Bool}
-                  onChange={this.changeEdit1}
-                />
                 <h1
                   className={`slideHead ${contentHeadFlex}`}
                   onClick={this.clickHead}
@@ -165,10 +179,10 @@ class Home extends Component {
                 </h1>
                 <input
                   type="text"
-                  className={`input2 ${input2Flex}`}
-                  value={description}
-                  onBlur={this.changeEdit2Bool}
-                  onChange={this.changeEdit2}
+                  className={`input1 ${input1Flex}`}
+                  value={heading}
+                  onBlur={this.changeEdit1Bool}
+                  onChange={this.changeEdit1}
                 />
                 <p
                   className={`slidePara ${contentParaFlex}`}
@@ -176,6 +190,13 @@ class Home extends Component {
                 >
                   {description}
                 </p>
+                <input
+                  type="text"
+                  className={`input2 ${input2Flex}`}
+                  value={description}
+                  onBlur={this.changeEdit2Bool}
+                  onChange={this.changeEdit2}
+                />
               </div>
             </div>
           </div>
